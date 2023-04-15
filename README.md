@@ -2,10 +2,10 @@
 > https://qaixerabbas.github.io/
 
 ## Features 📋
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Typing animation using `Typed.js`\
-⚡️ Easy to modify
+- Fully Responsive
+- Valid HTML5 & CSS3
+- Typing animation using `Typed.js`
+- Easy to modify
 
 ## Installation & Deployment 📦
 - Clone the repository and modify the content of <b>index.html</b> 
@@ -23,7 +23,7 @@
 ✔️ Experience\
 ✔️ Projects \
 ✔️ Skills \
-✔️ Resume\
+✔️ Resume 
 
 ## Acknowledgements
 - A big thank you to [bootstrapmade.com](https://bootstrapmade.com) for this amazing template. You can find the original template at [this](https://bootstrapmade.com/personal-free-resume-bootstrap-template/) link.
