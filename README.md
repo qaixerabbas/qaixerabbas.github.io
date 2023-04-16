@@ -25,6 +25,10 @@
 ✔️ Skills \
 ✔️ Resume 
 
+## SVG Logos
+- [SeekLogo](https://seeklogo.com/)
+- [vectorlogo](https://www.vectorlogo.zone/)
+
 ## Acknowledgements
 - A big thank you to [bootstrapmade.com](https://bootstrapmade.com) for this amazing template. You can find the original template at [this](https://bootstrapmade.com/personal-free-resume-bootstrap-template/) link.
 - Thanks to [Prerak Raja](https://rajaprerak.github.io/) for template modificaiton idea.
