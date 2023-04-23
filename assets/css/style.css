@@ -129,7 +129,9 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: #0dc185;
+  background: lightcoral;
+  /* color: lightsteelblue; */
+  color: whitesmoke;
 }
 
 @media (max-width: 992px) {
@@ -204,7 +206,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active>a,
 .nav-menu li:hover>a {
-  color: #0dc185;
+  color: brown;
   text-decoration: none;
 }
 
@@ -960,7 +962,7 @@ section .container {
 .contact .info-box .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #fff;
+  /* color: #fff; */
   line-height: 1;
   margin-right: 12px;
   transition: 0.3s;
