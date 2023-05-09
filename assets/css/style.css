@@ -40,7 +40,7 @@ body::before {
 }
 
 a {
-  color: black;
+  color: rgb(84, 170, 231);
 }
 
 a:hover {
