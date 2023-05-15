@@ -28,6 +28,7 @@
 ## SVG Logos
 - [SeekLogo](https://seeklogo.com/)
 - [Vector Logo](https://www.vectorlogo.zone/)
+- [SVGPro](https://www.svgrepo.com/vectors/pandas/)
 
 ## Acknowledgements
 - A big thank you to [bootstrapmade.com](https://bootstrapmade.com) for this amazing template. You can find the original template at [this](https://bootstrapmade.com/personal-free-resume-bootstrap-template/) link.
