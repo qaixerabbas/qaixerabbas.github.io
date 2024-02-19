@@ -48,11 +48,27 @@
   </script>
   <style>
     header {
+      position: relative;
       background-image: url("bg2.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
+      height: 100vh;
+      /* Adjust the height as needed */
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.09);
+      /* Adjust the alpha channel for transparency */
+      pointer-events: none;
+      /* Allows clicks to pass through the overlay to the image */
     }
   </style>
 
