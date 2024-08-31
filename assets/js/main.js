@@ -13,7 +13,8 @@
       var hash = this.hash;
       var target = $(hash);
       if (target.length) {
-        e.preventDefault();
+        // e.preventDefault();
+        window.location.hash = hash;
 
         if ($(this).parents('.nav-menu, .mobile-nav').length) {
           $('.nav-menu .active, .mobile-nav .active').removeClass('active');
@@ -43,7 +44,7 @@
           $('.mobile-nav-overly').fadeOut();
         }
 
-        return false;
+        // return false;
 
       }
     }
