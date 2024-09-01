@@ -92,7 +92,8 @@
   <header id="header" class="header-tops">
 
     <div class="container">
-      <h1>Qaiser Abbas</h1>
+      <span>Hola, soy yo!</span>
+      <h1><span style="color: rgb(139, 48, 48);">Q</span>aiser <span style="color: rgb(139, 48, 48);">A</span>bbas</h1>
       <h2 style="color:#070707">I'm an experienced <span class="typing" style="color: brown;"></span></h2>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -307,13 +308,13 @@
         <div class="section-title" style="margin-bottom: 20px;">
           <h2 style="margin-bottom: 20px;">Online Certifications</h2>
         </div>
-        <h6>Python 3 Programming Specialization by <a href="https://www.coursera.org/specializations/python-3-programming">University of Michigan</a> | <a href="https://www.coursera.org/account/accomplishments/certificate/Y5M3XR85SSUY">Certificate</a></h6>
-        <h6>Deep Learning Specialization by <a href="https://www.coursera.org/specializations/deep-learning">DeepLearning.AI</a> | <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AQLKT6TA8LKS">Certificate</a></h6>
-        <h6>Computer Vision Basics by <a href="https://www.coursera.org/learn/computer-vision-basics">University at Buffalo</a> | <a href="https://www.coursera.org/account/accomplishments/verify/8MDHVS2U5UJV">Certificate</a></h6>
-        <h6>Maths for Machine Learning by <a href="https://www.coursera.org/specializations/mathematics-machine-learning">Imperial College London</a> | <a href="https://www.coursera.org/account/accomplishments/certificate/HB2Z7LKNQ8SK">Certificate</a></h6>
-        <h6>AI for Medical Diagnosis by <a href="https://www.coursera.org/learn/ai-for-medical-diagnosis">DeepLearning.AI</a> | <a href="https://www.coursera.org/account/accomplishments/certificate/YVVGAJKK2CRR">Certificate</a></h6>
-        <h6>Introdu ction to Intel® Distribu tion of OpenVINO™
-          toolkit for Computer Vision Applications by <a href="https://www.classcentral.com/course/intel-openvino-17284">Intel</a> | <a href="https://www.coursera.org/account/accomplishments/certificate/GM9SHT36RW3B">Certificate</a></h6>
+        <h6>Python 3 Programming Specialization <i>by</i> <a href="https://www.coursera.org/specializations/python-3-programming">University of Michigan</a> | <a href="https://www.coursera.org/account/accomplishments/certificate/Y5M3XR85SSUY">Certificate</a></h6>
+        <h6>Deep Learning Specialization <i>by</i> <a href="https://www.coursera.org/specializations/deep-learning">DeepLearning.AI</a> | <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AQLKT6TA8LKS">Certificate</a></h6>
+        <h6>Computer Vision Basics <i>by</i> <a href="https://www.coursera.org/learn/computer-vision-basics">University at Buffalo</a> | <a href="https://www.coursera.org/account/accomplishments/verify/8MDHVS2U5UJV">Certificate</a></h6>
+        <h6>Maths for Machine Learning <i>by</i> <a href="https://www.coursera.org/specializations/mathematics-machine-learning">Imperial College London</a> | <a href="https://www.coursera.org/account/accomplishments/certificate/HB2Z7LKNQ8SK">Certificate</a></h6>
+        <h6>AI for Medical Diagnosis <i>by</i> <a href="https://www.coursera.org/learn/ai-for-medical-diagnosis">DeepLearning.AI</a> | <a href="https://www.coursera.org/account/accomplishments/certificate/YVVGAJKK2CRR">Certificate</a></h6>
+        <h6>Introdu ction to Intel® Distribution of OpenVINO™
+          toolkit for Computer Vision Applications <i>by</i> <a href="https://www.classcentral.com/course/intel-openvino-17284">Intel</a> | <a href="https://www.coursera.org/account/accomplishments/certificate/GM9SHT36RW3B">Certificate</a></h6>
         <!-- start of certifications -->
         <!-- <div class="row portfolio-container" style="position: relative; height: 437.75px;">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
@@ -633,8 +634,7 @@
             <li>
               <i class="fa fa-laptop"></i> <b>Python Automation Scripts</b>
               <p>This repo has multiple automation scripts using Python. The scripts can be used in any computer
-                vision
-                projects. It has scripts to read, write, resize and perform multiple operations on images.<br>
+                vision projects. It has scripts to read, write, resize and perform multiple operations on images.<br>
                 <em>Tech Stack & Libraries</em> : Python, OpenCV, Augmentor, PyTorch, NumPy, Pandas <br>
                 <a href="https://github.com/qaixerabbas/simple-python-codes">GitHub Link</a>
               </p>
@@ -991,6 +991,30 @@
   <!-- End Skills Section -->
 
   <!-- Vendor JS Files -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const spanElement = document.querySelector('.header-tops span');
+      const navLinks = document.querySelectorAll('.nav-menu a');
+  
+      function toggleHolla() {
+        if (window.location.hash !== '#header' && window.location.hash !== '') {
+          spanElement.style.display = 'none';
+        } else {
+          spanElement.style.display = 'inline';
+        }
+      }
+  
+      navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          setTimeout(toggleHolla, 10);  // Slight delay to allow hash change
+        });
+      });
+  
+      // Initial check
+      toggleHolla();
+    });
+  </script>
+  
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -1003,13 +1027,121 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing', {
-      strings: ["ML Engineer", "Data Scientist", "AI Developer"],
+      strings: ["ML Engineer.", "Data Scientist.", "AI Developer."],
       loop: true,
       typeSpeed: 65,
       backSpeed: 65
     });
   </script>
+<script>$(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var hash = this.hash;
+    var target = $(hash);
 
+    if (target.length) {
+      // Ensure the default behavior (scrolling) is enabled
+      if (hash === '#header') {
+        // Remove the hash for the home section
+        history.replaceState(null, null, ' ');
+        $('#header').removeClass('header-top');
+        $("section").removeClass('section-show');
+        window.scrollTo(0, 0);  // Scroll to the top
+        return;
+      } else {
+        window.location.hash = hash;
+      }
+
+      if ($(this).parents('.nav-menu, .mobile-nav').length) {
+        $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+        $(this).closest('li').addClass('active');
+      }
+
+      if (!$('#header').hasClass('header-top')) {
+        $('#header').addClass('header-top');
+        setTimeout(function() {
+          $("section").removeClass('section-show');
+          $(hash).addClass('section-show');
+        }, 350);
+      } else {
+        $("section").removeClass('section-show');
+        $(hash).addClass('section-show');
+      }
+
+      if ($('body').hasClass('mobile-nav-active')) {
+        $('body').removeClass('mobile-nav-active');
+        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+        $('.mobile-nav-overly').fadeOut();
+      }
+    }
+  }
+});
+
+// Remove hash from URL on page load if it's #header
+$(document).ready(function() {
+  if (window.location.hash === '#header') {
+    history.replaceState(null, null, ' ');
+    window.scrollTo(0, 0);  // Scroll to the top
+  }
+});
+</script>
+
+<script>$(document).ready(function() {
+  // Check if there's a hash in the URL when the page is loaded
+  if (window.location.hash) {
+    // Short delay to ensure the section is fully rendered
+    setTimeout(function() {
+      var target = $(window.location.hash);
+
+      if (target.length) {
+        // Adjust the scroll position to account for any fixed header
+        var offset = target.offset().top;
+
+        // Customize this offset if you have a fixed header, for example:
+        var fixedHeaderHeight = $('#header').outerHeight(); // Assuming #header is your fixed header
+        window.scrollTo(0, offset - fixedHeaderHeight);
+      }
+    }, 10); // Delay can be adjusted depending on your page's load time
+  }
+});
+
+$(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var hash = this.hash;
+    var target = $(hash);
+
+    if (target.length) {
+      // Adjust scroll position on click
+      e.preventDefault(); // Prevent the default jump to hash behavior
+
+      if (hash === '#header') {
+        // Handle the home section separately
+        history.replaceState(null, null, ' ');
+        window.scrollTo(0, 0);  // Scroll to the top
+        return;
+      } else {
+        var offset = target.offset().top;
+        var fixedHeaderHeight = $('#header').outerHeight(); // Adjust for fixed header
+
+        $('html, body').animate({
+          scrollTop: offset - fixedHeaderHeight
+        }, 500); // Adjust scrolling animation time if needed
+      }
+
+      // Handle active class for the clicked link
+      if ($(this).parents('.nav-menu, .mobile-nav').length) {
+        $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+        $(this).closest('li').addClass('active');
+      }
+
+      if ($('body').hasClass('mobile-nav-active')) {
+        $('body').removeClass('mobile-nav-active');
+        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+        $('.mobile-nav-overly').fadeOut();
+      }
+    }
+  }
+});
+</script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
