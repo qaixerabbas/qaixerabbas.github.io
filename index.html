@@ -1142,6 +1142,71 @@ $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
   }
 });
 </script>
+<script>
+  $(document).ready(function() {
+  // Function to adjust scroll position based on the hash
+  function adjustScrollPosition() {
+    if (window.location.hash) {
+      var target = $(window.location.hash);
+
+      if (target.length) {
+        // Adjust the scroll position to account for any fixed header
+        var offset = target.offset().top;
+        var fixedHeaderHeight = $('#header').outerHeight(); // Adjust this if you have a fixed header
+
+        window.scrollTo(0, offset - fixedHeaderHeight);
+      }
+    }
+  }
+
+  // Adjust scroll position on page load
+  adjustScrollPosition();
+
+  // Adjust scroll position when clicking on a nav link
+  $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var hash = this.hash;
+      var target = $(hash);
+
+      if (target.length) {
+        e.preventDefault(); // Prevent the default jump to hash behavior
+
+        if (hash === '#header') {
+          // Handle the home section separately
+          history.replaceState(null, null, ' ');  // Clear the hash from the URL
+          window.scrollTo(0, 0);  // Scroll to the top
+          return;
+        } else {
+          var offset = target.offset().top;
+          var fixedHeaderHeight = $('#header').outerHeight(); // Adjust for fixed header
+
+          $('html, body').animate({
+            scrollTop: offset - fixedHeaderHeight
+          }, 500); // Adjust scrolling animation time if needed
+        }
+
+        // Handle active class for the clicked link
+        if ($(this).parents('.nav-menu, .mobile-nav').length) {
+          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+          $(this).closest('li').addClass('active');
+        }
+
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+          $('.mobile-nav-overly').fadeOut();
+        }
+      }
+    }
+  });
+
+  // Ensure that the scroll adjustment happens even if the hash changes without a full page reload
+  $(window).on('hashchange', function() {
+    adjustScrollPosition();
+  });
+});
+
+</script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
