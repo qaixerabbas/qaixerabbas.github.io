@@ -1033,127 +1033,15 @@
       backSpeed: 65
     });
   </script>
-<script>$(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
-  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    var hash = this.hash;
-    var target = $(hash);
-
-    if (target.length) {
-      // Ensure the default behavior (scrolling) is enabled
-      if (hash === '#header') {
-        // Remove the hash for the home section
-        history.replaceState(null, null, ' ');
-        $('#header').removeClass('header-top');
-        $("section").removeClass('section-show');
-        window.scrollTo(0, 0);  // Scroll to the top
-        return;
-      } else {
-        window.location.hash = hash;
-      }
-
-      if ($(this).parents('.nav-menu, .mobile-nav').length) {
-        $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-        $(this).closest('li').addClass('active');
-      }
-
-      if (!$('#header').hasClass('header-top')) {
-        $('#header').addClass('header-top');
-        setTimeout(function() {
-          $("section").removeClass('section-show');
-          $(hash).addClass('section-show');
-        }, 350);
-      } else {
-        $("section").removeClass('section-show');
-        $(hash).addClass('section-show');
-      }
-
-      if ($('body').hasClass('mobile-nav-active')) {
-        $('body').removeClass('mobile-nav-active');
-        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-        $('.mobile-nav-overly').fadeOut();
-      }
-    }
-  }
-});
-
-// Remove hash from URL on page load if it's #header
-$(document).ready(function() {
-  if (window.location.hash === '#header') {
-    history.replaceState(null, null, ' ');
-    window.scrollTo(0, 0);  // Scroll to the top
-  }
-});
-</script>
-
-<script>$(document).ready(function() {
-  // Check if there's a hash in the URL when the page is loaded
-  if (window.location.hash) {
-    // Short delay to ensure the section is fully rendered
-    setTimeout(function() {
-      var target = $(window.location.hash);
-
-      if (target.length) {
-        // Adjust the scroll position to account for any fixed header
-        var offset = target.offset().top;
-
-        // Customize this offset if you have a fixed header, for example:
-        var fixedHeaderHeight = $('#header').outerHeight(); // Assuming #header is your fixed header
-        window.scrollTo(0, offset - fixedHeaderHeight);
-      }
-    }, 10); // Delay can be adjusted depending on your page's load time
-  }
-});
-
-$(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
-  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    var hash = this.hash;
-    var target = $(hash);
-
-    if (target.length) {
-      // Adjust scroll position on click
-      e.preventDefault(); // Prevent the default jump to hash behavior
-
-      if (hash === '#header') {
-        // Handle the home section separately
-        history.replaceState(null, null, ' ');
-        window.scrollTo(0, 0);  // Scroll to the top
-        return;
-      } else {
-        var offset = target.offset().top;
-        var fixedHeaderHeight = $('#header').outerHeight(); // Adjust for fixed header
-
-        $('html, body').animate({
-          scrollTop: offset - fixedHeaderHeight
-        }, 500); // Adjust scrolling animation time if needed
-      }
-
-      // Handle active class for the clicked link
-      if ($(this).parents('.nav-menu, .mobile-nav').length) {
-        $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-        $(this).closest('li').addClass('active');
-      }
-
-      if ($('body').hasClass('mobile-nav-active')) {
-        $('body').removeClass('mobile-nav-active');
-        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-        $('.mobile-nav-overly').fadeOut();
-      }
-    }
-  }
-});
-</script>
 <script>
   $(document).ready(function() {
   // Function to adjust scroll position based on the hash
   function adjustScrollPosition() {
     if (window.location.hash) {
       var target = $(window.location.hash);
-
       if (target.length) {
-        // Adjust the scroll position to account for any fixed header
         var offset = target.offset().top;
-        var fixedHeaderHeight = $('#header').outerHeight(); // Adjust this if you have a fixed header
-
+        var fixedHeaderHeight = $('#header').outerHeight(); // Adjust for fixed header
         window.scrollTo(0, offset - fixedHeaderHeight);
       }
     }
@@ -1162,45 +1050,49 @@ $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
   // Adjust scroll position on page load
   adjustScrollPosition();
 
-  // Adjust scroll position when clicking on a nav link
+  // Handle click events on navigation links
   $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
       var hash = this.hash;
       var target = $(hash);
-
+      
       if (target.length) {
         e.preventDefault(); // Prevent the default jump to hash behavior
 
         if (hash === '#header') {
-          // Handle the home section separately
-          history.replaceState(null, null, ' ');  // Clear the hash from the URL
-          window.scrollTo(0, 0);  // Scroll to the top
-          return;
+          // Special case for home section
+          history.replaceState(null, null, ' '); // Clear the hash from the URL
+          window.scrollTo(0, 0); // Scroll to the top
+          $('#header').removeClass('header-top');
+          $("section").removeClass('section-show');
         } else {
           var offset = target.offset().top;
           var fixedHeaderHeight = $('#header').outerHeight(); // Adjust for fixed header
-
+          
           $('html, body').animate({
             scrollTop: offset - fixedHeaderHeight
           }, 500); // Adjust scrolling animation time if needed
-        }
 
-        // Handle active class for the clicked link
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
+          // Handle section display
+          $("section").removeClass('section-show');
+          $(hash).addClass('section-show');
+          
+          // Set the active class for the clicked link
           $('.nav-menu .active, .mobile-nav .active').removeClass('active');
           $(this).closest('li').addClass('active');
-        }
 
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
+          // Close mobile navigation if active
+          if ($('body').hasClass('mobile-nav-active')) {
+            $('body').removeClass('mobile-nav-active');
+            $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+            $('.mobile-nav-overly').fadeOut();
+          }
         }
       }
     }
   });
 
-  // Ensure that the scroll adjustment happens even if the hash changes without a full page reload
+  // Adjust scroll position on hashchange event
   $(window).on('hashchange', function() {
     adjustScrollPosition();
   });
