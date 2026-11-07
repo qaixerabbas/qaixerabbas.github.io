@@ -53,61 +53,66 @@
         <br>
         <div class="social-icons">
         
-        <a style="margin: 0 5px 0 0" href="https://scholar.google.com/">
+        <a style="margin: 0 5px 0 0" href="https://scholar.google.com/citations?user=oAWfLsoAAAAJ&hl=en&oi=ao">
           <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
         </a>  
         
 
         
-        <a style="margin: 0 5px 0 0" href="assets/files/curriculum_vitae.pdf">
+        <a style="margin: 0 5px 0 0" href="assets/files/abbas_cv.pdf">
           <i class="ai ai-cv" style="font-size:1.3rem;"></i>
         </a>
         
 
         
-        <a style="margin: 0 5px 0 0" href="https://github.com/">
+        <a style="margin: 0 5px 0 0" href="https://github.com/qaixerabbas">
           <i class="fab fa-github"></i>
         </a>
-        
+
+        <a style="margin: 0 5px 0 0" href="mailto:abbas.qaixer@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
 
         
-        <a style="margin: 0 5px 0 0" href="https://www.linkedin.com/">
+        <a style="margin: 0 5px 0 0" href="https://www.linkedin.com/in/qaixerabbas/">
           <i class="fab fa-linkedin"></i>
         </a>
         
 
         
-        <a style="margin: 0 0 0 0" href="https://twitter.com/">
+        <a style="margin: 0 0 0 0" href="https://x.com/qaiserabbas0">
           <i class="fab fa-twitter"></i>
         </a>
 
-         <a style="margin: 0 5px 0 0" href="https://scholar.google.com/">
-          <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
+         <a style="margin: 0 5px 0 0" href="https://orcid.org/0000-0001-9246-5208" target="_blank" rel="noopener">
+           <i class="ai ai-orcid" style="font-size:1.2rem"></i>
         </a>  
         
 
         
-        <a style="margin: 0 5px 0 0" href="assets/files/curriculum_vitae.pdf">
-          <i class="ai ai-cv" style="font-size:1.3rem;"></i>
-        </a>
-        
-
-        
-        <a style="margin: 0 5px 0 0" href="https://github.com/">
-          <i class="fab fa-github"></i>
+        <a style="margin: 0 5px 0 0" href="https://www.researchgate.net/profile/Qaiser-Abbas-13" target="_blank" rel="noopener">
+          <i class="ai ai-researchgate" style="font-size:1.3rem;"></i>
         </a>
         
         </div>
         <br>
 
-        <nav class="site-nav" aria-label="Primary navigation">
+      </header>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="nav-toggle-icon" aria-hidden="true">&#9776;</span>
+          <span>Menu</span>
+        </button>
+        <div class="nav-links" id="primary-navigation">
           <a href="#about-me">Home</a>
           <a href="#publications">Publications</a>
           <a href="#services">Services</a>
-          <!-- <a href="./assets/files/curriculum_vitae.pdf">CV</a> -->
-        </nav>
-
-      </header>
+          <a href="#teaching">Teaching</a>
+          <a href="#experience">Experience</a>
+          <!-- <a href="#awards">Awards</a> -->
+          <a href="#education">Education</a>
+        </div>
+      </nav>
       <section>
 
       <h2 id="about-me">About Me</h2>
@@ -119,7 +124,7 @@ I am broadly interested in learning from limited data for visual recognition pro
 
 <ul>
   <li><strong>Computer Vision:</strong> image recognition, image generation, video captioning</li>
-  <li><strong>Machine Learning:</strong> meta-learning, incremental learning, transfer learning</li>
+  <li><strong>Deep Learning:</strong> meta-learning, incremental learning, transfer learning</li>
   <li><strong>Medical Image Analysis:</strong> meta-learning, incremental learning, transfer learning</li>
   <li><strong>Natural Language Processing:</strong> meta-learning, incremental learning, transfer learning</li>
   <li><strong>Medical Foundation Models:</strong> meta-learning, incremental learning, transfer learning</li>
@@ -260,6 +265,23 @@ I am broadly interested in learning from limited data for visual recognition pro
       if (showPublicationImages) {
         document.body.classList.add('show-publication-images');
       }
+    </script>
+
+    <script>
+      const siteNav = document.querySelector('.site-nav');
+      const navToggle = document.querySelector('.nav-toggle');
+
+      navToggle.addEventListener('click', () => {
+        const isOpen = siteNav.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      document.querySelectorAll('.nav-links a').forEach((link) => {
+        link.addEventListener('click', () => {
+          siteNav.classList.remove('is-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
     </script>
     
     <script>
