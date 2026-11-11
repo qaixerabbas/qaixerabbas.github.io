@@ -1,0 +1,10 @@
+- label: Computer Vision
+  text: Image Understanding, Video Anomaly Detection, Vision-Language Models
+- label: Deep Learning
+  text: Self-Supervised Learning, Efficient Architectures, Representation Learning
+- label: Medical Image Analysis
+  text: Histopathological Image Analysis, Rare Cancer Detection, Medical Foundation Models
+- label: Natural Language Processing
+  text: Low Resource NLP, LLM Safety and Security, Efficient Adaptation of LLMs
+- label: Multimodal Learning
+  text: Multimodal Fusion, Multimodal Alignment, Multimodal Learning with Imperfect Data

@@ -1,0 +1,9 @@
+- role: Teaching Assistant
+  institution: College of Science and Engineering, Hamad Bin Khalifa University, Qatar
+  courses: CPEN-151 Fundamentals of Programming and Computer Science
+- role: Teaching Fellow
+  institution: Department of Computer Science, UET Lahore, Lahore, Pakistan
+  courses: Python for Data Science, Operating Systems, Artificial Intelligence, Computer Networks (Lab)
+- role: Lecturer
+  institution: Government Islamia College Railway Road, Lahore, Pakistan
+  courses: Introduction to Computing

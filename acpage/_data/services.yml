@@ -1,0 +1,14 @@
+conference_reviewers:
+  - label: IEEE Symposium Series on Computational Intelligence 2026
+    href: https://attend.ieee.org/ssci-2027/
+journal_reviewers:
+  - label: Visual Computing for Industry, Biomedicine, and Art
+    href: https://link.springer.com/journal/42492
+  - label: Computerized Medical Imaging and Graphics
+    href: https://www.sciencedirect.com/journal/computerized-medical-imaging-and-graphics
+  - label: Biomedical Signal Processing and Control
+    href: https://www.sciencedirect.com/journal/biomedical-signal-processing-and-control
+  - label: ACM Transactions on Asian Language Information Processing
+    href: https://dl.acm.org/journal/TALLIP
+  - label: SN Computer Science
+    href: https://link.springer.com/journal/42979

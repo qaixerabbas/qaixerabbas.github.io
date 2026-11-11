@@ -1,0 +1,6 @@
+# Keep the site intentionally simple: static HTML plus Jekyll data/includes.
+title: Qaiser Abbas | PhD @ HBKU, Qatar
+markdown: kramdown
+exclude:
+  - README.md
+  - portfolio-refactored.zip

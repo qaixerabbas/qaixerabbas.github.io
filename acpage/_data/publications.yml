@@ -1,0 +1,90 @@
+- badge: MICCAI
+  image: ./assets/img/teaser_example_2.png
+  title: "Beyond accuracy: resource-aware evaluation of deep learning models for remote sensing image classification"
+  href: https://www.tandfonline.com/doi/abs/10.1080/01431161.2026.2736868
+  authors: <strong>Qaiser Abbas</strong>, Farid Khan, Muhammad Irzam Liaqat, Hamza Sajjad, Muhammad Laeeq Khan
+  venue: International Journal of Remote Sensing
+  year: 2026
+  code: '#'
+  bibtex: https://bib.yliu.me/MICCAI23.txt
+- badge: MICCAI
+  image: ./assets/img/teaser_example_2.png
+  title: "Rethinking Architectural Complexity in Deep Vision Models for Histopathological Image Classification"
+  href: https://link.springer.com/article/10.1007/s10278-026-02175-9
+  authors: <strong>Qaiser Abbas</strong>, Muhammad Irzam Liaqat, Sabahat Qayum, Sadaf Hina
+  venue: Journal of Imaging Informatics in Medicine
+  year: 2026
+  code: '#'
+  bibtex: https://bib.yliu.me/MICCAI23.txt
+- badge: MICCAI
+  image: ./assets/img/teaser_example_2.png
+  title: "FaceAge+: training-free synthetic augmentation for deep learning-based biological age estimation from facial images"
+  href: https://www.nature.com/articles/s41598-026-58631-7
+  authors: <strong>Qaiser Abbas</strong>, Muhammad Haris Farooq, Tanvir Alam
+  venue: Scientific Reports
+  year: 2026
+  code: '#'
+  bibtex: https://bib.yliu.me/MICCAI23.txt
+- badge: MICCAI
+  image: ./assets/img/teaser_example_2.png
+  title: "Cross-organ transfer learning for tumor microenvironment classification from colorectal to gastric cancer histopathology"
+  href: https://www.nature.com/articles/s41598-026-62658-1
+  authors: Hiba Alzoubi, Rachida Zegour, Khaled Althelaya, Sarah Al Sharie, <strong>Qaiser Abbas</strong>, Shehel Yoosuf, Jens Schneider, Alaa Abd-Alrazaq
+  venue: Scientific Reports
+  year: 2026
+  code: '#'
+  bibtex: https://bib.yliu.me/MICCAI23.txt
+- badge: MICCAI
+  image: ./assets/img/teaser_example_2.png
+  title: "Multimodal learning under imperfect data conditions: A survey"
+  href: https://www.techrxiv.org/doi/full/10.36227/techrxiv.176410566.65375877/v1
+  authors: Muhammad Irzam Liaqat, <strong>Qaiser Abbas</strong>, Shah Nawaz, Zaigham Zaheer, Marta Moscati, Yufang Hou, Muhammad Haris Khan, Salman Khan, Elisabeth Andre, Markus Schedl
+  venue: TechRxiv
+  year: 2025
+  code: '#'
+  bibtex: https://bib.yliu.me/MICCAI23.txt
+- badge: MICCAI
+  image: ./assets/img/teaser_example_2.png
+  title: "Adversarial attacks on artificial Intelligence of Things-based operational technologies in theme parks"
+  href: https://www.sciencedirect.com/science/article/pii/S2542660525001684
+  authors: Sadaf Hina, <strong>Qaiser Abbas</strong>, Kashan Ahmed
+  venue: Internet of Things
+  year: 2025
+  code: '#'
+  bibtex: https://bib.yliu.me/MICCAI23.txt
+- badge: MICCAI
+  image: ./assets/img/teaser_example_2.png
+  title: "Optimization of predictive performance of intrusion detection system using hybrid ensemble model for secure systems"
+  href: https://peerj.com/articles/cs-1552/
+  authors: <strong>Qaiser Abbas</strong>, Sadaf Hina, Hamza Sajjad, Khurram Shabih Zaidi, Rehan Akbar
+  venue: PeerJ Computer Science
+  year: 2023
+  code: '#'
+  bibtex: https://bib.yliu.me/MICCAI23.txt
+- badge: MICCAI
+  image: ./assets/img/teaser_example_2.png
+  title: "Using Data Augmentation and Bidirectional Encoder Representations from Transformers for Improving Punjabi Named Entity Recognition"
+  href: https://dl.acm.org/doi/full/10.1145/3595861
+  authors: Hamza Khalid, Ghulam Murtaza, <strong>Qaiser Abbas</strong>
+  venue: ACM Transactions on Asian and Low-Resource Languages
+  year: 2023
+  code: '#'
+  bibtex: https://bib.yliu.me/MICCAI23.txt
+- badge: MICCAI
+  image: ./assets/img/teaser_example_2.png
+  title: "Detection and Classification of Malignant Melanoma Using Deep Features of NASNet"
+  href: https://link.springer.com/article/10.1007/s42979-022-01439-9
+  authors: <strong>Qaiser Abbas</strong>, Anza Gul
+  venue: SN Computer Science
+  year: 2022
+  code: '#'
+  bibtex: https://bib.yliu.me/MICCAI23.txt
+- badge: MICCAI
+  image: ./assets/img/teaser_example_2.png
+  title: "Acral melanoma detection using dermoscopic images and convolutional neural networks"
+  href: https://link.springer.com/article/10.1186/s42492-021-00091-z
+  authors: <strong>Qaiser Abbas</strong>, Farheen Ramzan, Muhammad Usman Ghani Khan
+  venue: Visual Computing for Industry, Biomedicine and Arts
+  year: 2021
+  code: '#'
+  bibtex: https://bib.yliu.me/MICCAI23.txt

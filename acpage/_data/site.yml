@@ -1,0 +1,49 @@
+title: Qaiser Abbas | PhD @ HBKU, Qatar
+language: en-US
+meta_description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
+meta_keywords: minimal light
+canonical_url: https://minimal-light-theme.yliu.me/
+profile:
+  name: Qaiser Abbas
+  avatar: ./assets/img/qysr.png
+  avatar_alt: avatar
+  position: Ph.D. (CSE) Student @
+  affiliation: Hamad Bin Khalifa University, Qatar
+  email: qaab89376@hbku.edu.qa
+navigation:
+  - label: Home
+    href: '#about-me'
+  - label: Publications
+    href: '#publications'
+  - label: Teaching
+    href: '#teaching'
+  - label: Services
+    href: '#services'
+social_links:
+  - href: https://scholar.google.com/citations?user=oAWfLsoAAAAJ&hl=en&oi=ao
+    icon: ai ai-google-scholar
+    icon_style: font-size:1.2rem
+  - href: assets/files/abbas_cv.pdf
+    icon: ai ai-cv
+    icon_style: font-size:1.3rem;
+  - href: https://github.com/qaixerabbas
+    icon: fab fa-github
+  - href: mailto:abbas.qaixer@gmail.com
+    icon: fas fa-envelope
+  - href: https://www.linkedin.com/in/qaixerabbas/
+    icon: fab fa-linkedin
+  - href: https://x.com/qaiserabbas0
+    icon: fab fa-twitter
+    last: true
+    margin: 0 0 0 0
+  - href: https://orcid.org/0000-0001-9246-5208
+    icon: ai ai-orcid
+    icon_style: font-size:1.2rem
+    external: true
+  - href: https://www.researchgate.net/profile/Qaiser-Abbas-13
+    icon: ai ai-researchgate
+    icon_style: font-size:1.3rem;
+    external: true
+about:
+  - Hi, I am Qaiser Abbas, a PhD (CSE) student at <a href="https://www.hbku.edu.qa/en">HBKU</a> supervised by <a href="https://www.hbku.edu.qa/en/staff/jens-schneider">Dr. Jens Schneider</a> and <a href="https://www.hbku.edu.qa/en/staff/marco-agus">Dr. Marco Agus</a>. I completed my MSc from UET Lahore supervised by <a href="https://scholar.google.com/citations?user=WM9A5m4AAAAJ&hl=en&oi=ao">Dr. Usman Ghani Khan</a> and <a href="https://scholar.google.com/citations?user=PlJD884AAAAJ&hl=en&oi=ao">Dr. Farheen Ramzan</a>. I was co-supervised and mentored by <a href="https://scholar.google.com/citations?user=GT0gkZQAAAAJ&hl=en&oi=ao">Dr. Sadaf Hina</a> in Cyber Security and AI Safety.
+  - I am broadly interested in data-efficient learning for visual recognition, particularly in learning robust representations from limited data. My research interests span Medical Image Computing, Remote Sensing, and Agricultural AI. I am especially interested in developing robust, accurate, and interpretable methods that improve data and label efficiency across diverse visual recognition tasks.

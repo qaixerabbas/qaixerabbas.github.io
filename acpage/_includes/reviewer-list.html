@@ -1,0 +1,6 @@
+<h4>{{ include.title }}</h4>
+<ul>
+{% for reviewer in include.items %}
+  <li><a href="{{ reviewer.href }}"><autocolor>{{ reviewer.label }}</autocolor></a></li>
+{% endfor %}
+</ul>

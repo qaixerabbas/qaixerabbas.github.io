@@ -1,0 +1,8 @@
+{% for entry in site.data.teaching %}
+<p class="teaching-entry">
+  {{ entry.role }}<br>
+  <strong>{{ entry.institution }}</strong>
+  <br>
+  Course(s): {{ entry.courses }}
+</p>
+{% endfor %}
