@@ -35,7 +35,7 @@ social_links:
   - href: https://x.com/qaiserabbas0
     icon: fab fa-twitter
     last: true
-    margin: 0 0 0 0
+    # margin: 0 0 0 0
   - href: https://orcid.org/0000-0001-9246-5208
     icon: ai ai-orcid
     icon_style: font-size:1.2rem
