@@ -1,6 +1,6 @@
-document.querySelectorAll('a[href]:not(.site-nav a)').forEach((link) => {
-  link.target = '_blank';
-  link.rel = 'noopener';
+document.querySelectorAll('a[href]:not(.site-nav a):not(.bibtex-link)').forEach((link) => {
+    link.target = '_blank';
+    link.rel = 'noopener';
 });
 
 const siteNav = document.querySelector('.site-nav');

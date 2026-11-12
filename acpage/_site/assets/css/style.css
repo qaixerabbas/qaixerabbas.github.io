@@ -325,3 +325,107 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
     background: #2a2f3d !important;
   }
 }
+
+/* BibTeX modal overlay */
+#bib-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Modal container */
+.bibtex-content {
+    background: var(--global-bg-color, #fff);
+    color: var(--global-text-color, #333);
+    max-width: 650px;
+    width: 100%;
+    margin: 10vh auto;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* Heading */
+.bibtex-content h3 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 0 18px;
+    color: var(--global-text-color, #333);
+}
+
+/* Close button */
+.bibtex-content > button:first-child {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    border: none;
+    background: transparent;
+    color: var(--global-text-color, #333);
+    font-size: 23px;
+    line-height: 1;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.bibtex-content > button:first-child:hover {
+    opacity: 0.6;
+}
+
+/* BibTeX text */
+#bib-content {
+    background: var(--global-code-bg-color, #f6f6f6);
+    border: 1px solid var(--global-divider-color, #e5e5e5);
+    border-radius: 5px;
+    padding: 14px;
+    font-family: "SFMono-Regular", Consolas, monospace;
+    font-size: 12px !important;
+    line-height: 1.6;
+    color: var(--global-text-color, #333);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    max-height: 350px;
+    overflow-y: auto;
+    margin-bottom: 16px;
+}
+
+/* Copy button */
+#bib-modal .bibtex-content > button:last-of-type {
+    background: var(--global-theme-color, #1772d0);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 14px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+#bib-modal .bibtex-content > button:last-of-type:hover {
+    opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #bib-modal {
+        padding: 15px;
+    }
+
+    .bibtex-content {
+        margin: 12vh auto;
+        padding: 20px;
+    }
+
+    .bibtex-content h3 {
+        font-size: 18px;
+    }
+
+    #bib-content {
+        font-size: 11px !important;
+        max-height: 300px;
+    }
+}

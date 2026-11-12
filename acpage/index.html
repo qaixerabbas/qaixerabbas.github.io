@@ -89,6 +89,45 @@ layout: null
       <footer></footer>
     </div>
 
+   <div id="bib-modal">
+
+    <div class="bibtex-content">
+
+        <button onclick="document.getElementById('bib-modal').style.display='none'"
+                aria-label="Close">&times;</button>
+
+        <h3>BibTeX Citation</h3>
+
+        <pre id="bib-content"></pre>
+
+        <button onclick="navigator.clipboard.writeText(
+            document.getElementById('bib-content').textContent
+        )">
+            <i class="fas fa-copy"></i> Copy BibTeX
+        </button>
+
+    </div>
+
+</div>
+<script>
+async function showBibtex(key) {
+
+    const response = await fetch('/assets/bib/publications.bib');
+    const bib = await response.text();
+
+    const entries = bib.split(/(?=@\w+\s*\{)/);
+
+    const entry = entries.find(e =>
+        e.match(new RegExp('^@\\w+\\s*\\{\\s*' + key + '\\s*,'))
+    );
+
+    document.getElementById('bib-content').textContent =
+        entry ? entry.trim() : 'Citation not found!';
+
+    document.getElementById('bib-modal').style.display = 'block';
+}
+</script>
+
     <script src="/assets/js/scale.fix.js"></script>
     <script src="./assets/js/theme.js"></script>
     <script src="./assets/js/site.js"></script>

@@ -136,13 +136,12 @@
     </a>
   
 
-  <a href="abbas2026beyond"
-     class="btn btn-sm z-depth-0"
-     role="button"
-     target="_blank"
-     style="font-size:12px;">
-     BibTeX
-  </a>
+<a href="javascript:void(0);"
+   class="btn btn-sm z-depth-0 bibtex-link"
+   onclick="showBibtex('abbas2026beyond')"
+   style="font-size:12px;">
+   BibTeX
+</a>
 
 </div>
   </div>
@@ -172,13 +171,12 @@
     </a>
   
 
-  <a href="abbas2026rethinking"
-     class="btn btn-sm z-depth-0"
-     role="button"
-     target="_blank"
-     style="font-size:12px;">
-     BibTeX
-  </a>
+<a href="javascript:void(0);"
+   class="btn btn-sm z-depth-0 bibtex-link"
+   onclick="showBibtex('abbas2026rethinking')"
+   style="font-size:12px;">
+   BibTeX
+</a>
 
 </div>
   </div>
@@ -208,13 +206,12 @@
     </a>
   
 
-  <a href="abbas2026faceage+"
-     class="btn btn-sm z-depth-0"
-     role="button"
-     target="_blank"
-     style="font-size:12px;">
-     BibTeX
-  </a>
+<a href="javascript:void(0);"
+   class="btn btn-sm z-depth-0 bibtex-link"
+   onclick="showBibtex('abbas2026faceage')"
+   style="font-size:12px;">
+   BibTeX
+</a>
 
 </div>
   </div>
@@ -244,13 +241,12 @@
     </a>
   
 
-  <a href="alzoubi2026cross"
-     class="btn btn-sm z-depth-0"
-     role="button"
-     target="_blank"
-     style="font-size:12px;">
-     BibTeX
-  </a>
+<a href="javascript:void(0);"
+   class="btn btn-sm z-depth-0 bibtex-link"
+   onclick="showBibtex('alzoubi2026cross')"
+   style="font-size:12px;">
+   BibTeX
+</a>
 
 </div>
   </div>
@@ -280,13 +276,12 @@
     </a>
   
 
-  <a href="liaqat2025multimodal"
-     class="btn btn-sm z-depth-0"
-     role="button"
-     target="_blank"
-     style="font-size:12px;">
-     BibTeX
-  </a>
+<a href="javascript:void(0);"
+   class="btn btn-sm z-depth-0 bibtex-link"
+   onclick="showBibtex('liaqat2025multimodal')"
+   style="font-size:12px;">
+   BibTeX
+</a>
 
 </div>
   </div>
@@ -316,13 +311,12 @@
     </a>
   
 
-  <a href="hina2025adversarial"
-     class="btn btn-sm z-depth-0"
-     role="button"
-     target="_blank"
-     style="font-size:12px;">
-     BibTeX
-  </a>
+<a href="javascript:void(0);"
+   class="btn btn-sm z-depth-0 bibtex-link"
+   onclick="showBibtex('hina2025adversarial')"
+   style="font-size:12px;">
+   BibTeX
+</a>
 
 </div>
   </div>
@@ -352,13 +346,12 @@
     </a>
   
 
-  <a href="abbas2023optimization"
-     class="btn btn-sm z-depth-0"
-     role="button"
-     target="_blank"
-     style="font-size:12px;">
-     BibTeX
-  </a>
+<a href="javascript:void(0);"
+   class="btn btn-sm z-depth-0 bibtex-link"
+   onclick="showBibtex('abbas2023optimization')"
+   style="font-size:12px;">
+   BibTeX
+</a>
 
 </div>
   </div>
@@ -388,13 +381,12 @@
     </a>
   
 
-  <a href="khalid2023using"
-     class="btn btn-sm z-depth-0"
-     role="button"
-     target="_blank"
-     style="font-size:12px;">
-     BibTeX
-  </a>
+<a href="javascript:void(0);"
+   class="btn btn-sm z-depth-0 bibtex-link"
+   onclick="showBibtex('khalid2023using')"
+   style="font-size:12px;">
+   BibTeX
+</a>
 
 </div>
   </div>
@@ -424,13 +416,12 @@
     </a>
   
 
-  <a href="abbas2022detection"
-     class="btn btn-sm z-depth-0"
-     role="button"
-     target="_blank"
-     style="font-size:12px;">
-     BibTeX
-  </a>
+<a href="javascript:void(0);"
+   class="btn btn-sm z-depth-0 bibtex-link"
+   onclick="showBibtex('abbas2022detection')"
+   style="font-size:12px;">
+   BibTeX
+</a>
 
 </div>
   </div>
@@ -460,13 +451,12 @@
     </a>
   
 
-  <a href="abbas2021acral"
-     class="btn btn-sm z-depth-0"
-     role="button"
-     target="_blank"
-     style="font-size:12px;">
-     BibTeX
-  </a>
+<a href="javascript:void(0);"
+   class="btn btn-sm z-depth-0 bibtex-link"
+   onclick="showBibtex('abbas2021acral')"
+   style="font-size:12px;">
+   BibTeX
+</a>
 
 </div>
   </div>
@@ -532,6 +522,45 @@
       </section>
       <footer></footer>
     </div>
+
+   <div id="bib-modal">
+
+    <div class="bibtex-content">
+
+        <button onclick="document.getElementById('bib-modal').style.display='none'"
+                aria-label="Close">&times;</button>
+
+        <h3>BibTeX Citation</h3>
+
+        <pre id="bib-content"></pre>
+
+        <button onclick="navigator.clipboard.writeText(
+            document.getElementById('bib-content').textContent
+        )">
+            <i class="fas fa-copy"></i> Copy BibTeX
+        </button>
+
+    </div>
+
+</div>
+<script>
+async function showBibtex(key) {
+
+    const response = await fetch('/assets/bib/publications.bib');
+    const bib = await response.text();
+
+    const entries = bib.split(/(?=@\w+\s*\{)/);
+
+    const entry = entries.find(e =>
+        e.match(new RegExp('^@\\w+\\s*\\{\\s*' + key + '\\s*,'))
+    );
+
+    document.getElementById('bib-content').textContent =
+        entry ? entry.trim() : 'Citation not found!';
+
+    document.getElementById('bib-modal').style.display = 'block';
+}
+</script>
 
     <script src="/assets/js/scale.fix.js"></script>
     <script src="./assets/js/theme.js"></script>

@@ -24,7 +24,7 @@
   venue: Scientific Reports
   year: 2026
   code: 'https://github.com/qaixerabbas/faceage-plus'
-  bibtex: abbas2026faceage+
+  bibtex: abbas2026faceage
 - badge: Sci Rep
   image: ./assets/img/teaser_example_2.png
   title: "Cross-organ transfer learning for tumor microenvironment classification from colorectal to gastric cancer histopathology"

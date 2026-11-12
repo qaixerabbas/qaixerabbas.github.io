@@ -32,13 +32,12 @@
     </a>
   {% endif %}
 
-  <a href="{{ publication.bibtex }}"
-     class="btn btn-sm z-depth-0"
-     role="button"
-     target="_blank"
-     style="font-size:12px;">
-     BibTeX
-  </a>
+<a href="javascript:void(0);"
+   class="btn btn-sm z-depth-0 bibtex-link"
+   onclick="showBibtex('{{ publication.bibtex }}')"
+   style="font-size:12px;">
+   BibTeX
+</a>
 
 </div>
   </div>
