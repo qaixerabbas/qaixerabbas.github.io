@@ -429,3 +429,18 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
         max-height: 300px;
     }
 }
+
+/* Responsive text alignment */
+@media screen and (max-width: 768px) {
+    section {
+        text-align: left !important;
+    }
+
+    section p,
+    section li {
+        text-align: left !important;
+        line-height: 1.6;
+        word-spacing: normal;
+        letter-spacing: normal;
+    }
+}
