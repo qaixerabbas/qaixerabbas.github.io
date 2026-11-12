@@ -111,8 +111,10 @@ layout: null
 </div>
 <script>
 async function showBibtex(key) {
-
-    const response = await fetch('/assets/bib/publications.bib');
+    const response = await fetch('./assets/bib/publications.bib');
+    if (!response.ok) {
+        throw new Error(`Unable to load BibTeX file (${response.status})`);
+    }
     const bib = await response.text();
 
     const entries = bib.split(/(?=@\w+\s*\{)/);
