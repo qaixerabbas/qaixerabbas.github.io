@@ -17,9 +17,24 @@ body { background-color: #fff; padding: 0px; font: var(--body-font-size)/var(--b
 
 .pub-row { display: flex; align-items: center; }
 
-.social-icons a { display: inline-block; height: 2.8rem; width: 2.8rem; background-color: transparent; color: #043361 !important; border-radius: 100%; text-align: center; font-size: 1.35rem; line-height: 2.9rem; margin-right: 1rem; transition: transform 0.2s ease; }
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.8rem;
+    width: 2.8rem;
+    background-color: transparent;
+    color: #043361 !important;
+    border-radius: 100%;
+    font-size: 1.9rem;
+    margin-right: 1rem;
+    transition: transform 0.2s ease;
+}
 
-.social-icons a i { font-size: 1.35rem !important; }
+.social-icons a i {
+    font-size: 1.9rem !important;
+    line-height: 1;
+}
 
 @media (prefers-color-scheme: dark) { .social-icons a { color: #3eb7f0 !important; } }
 .social-icons a:last-child { margin-right: 0; }
