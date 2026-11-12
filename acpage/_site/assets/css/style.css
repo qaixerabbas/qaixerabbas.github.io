@@ -341,7 +341,7 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 .bibtex-content {
     background: var(--global-bg-color, #fff);
     color: var(--global-text-color, #333);
-    max-width: 650px;
+    max-width: 500px;
     width: 100%;
     margin: 10vh auto;
     padding: 24px;
