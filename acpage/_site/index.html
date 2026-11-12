@@ -523,7 +523,7 @@
       <footer></footer>
     </div>
 
-   <div id="bib-modal">
+ <div id="bib-modal">
 
     <div class="bibtex-content">
 
@@ -534,14 +534,13 @@
 
         <pre id="bib-content"></pre>
 
-        <button onclick="navigator.clipboard.writeText(
-            document.getElementById('bib-content').textContent
-        )">
+        <button id="copy-bibtex-btn" onclick="copyBibtex()">
             <i class="fas fa-copy"></i> Copy BibTeX
         </button>
 
     </div>
 
+</div>
 </div>
 <script>
 async function showBibtex(key) {
@@ -561,6 +560,35 @@ async function showBibtex(key) {
         entry ? entry.trim() : 'Citation not found!';
 
     document.getElementById('bib-modal').style.display = 'block';
+}
+</script>
+
+<script>
+async function copyBibtex() {
+
+    const content = document.getElementById('bib-content').textContent;
+    const button = document.getElementById('copy-bibtex-btn');
+
+    try {
+
+        await navigator.clipboard.writeText(content);
+
+        // Change button to green
+        button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+        button.style.backgroundColor = '#28a745';
+        button.style.color = '#ffffff';
+
+        // Restore original button after 2 seconds
+        setTimeout(() => {
+            button.innerHTML = '<i class="fas fa-copy"></i> Copy BibTeX';
+            button.style.backgroundColor = '';
+            button.style.color = '';
+        }, 2000);
+
+    } catch (error) {
+
+        button.innerHTML = '<i class="fas fa-times"></i> Copy failed!';
+    }
 }
 </script>
 
