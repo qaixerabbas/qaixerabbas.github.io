@@ -13,10 +13,34 @@
       <div class="periodical"><em>{{ publication.venue }} ({{ publication.year }})</em>
       </div>
     <div class="links">
-      <a href="{{ publication.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      <a href="{{ publication.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
-      <!-- <strong> <i style="color:#e74d3c">Early Accept</i></strong> -->
-    </div>
+
+  {% if publication.code and publication.code != '#' %}
+    <a href="{{ publication.code }}"
+       class="btn btn-sm z-depth-0"
+       role="button"
+       target="_blank"
+       style="font-size:12px;">
+       Code
+    </a>
+  {% else %}
+    <a class="btn btn-sm z-depth-0"
+       role="button"
+       aria-disabled="true"
+       tabindex="-1"
+       style="font-size:12px; opacity:0.4; cursor:not-allowed; pointer-events:none;">
+       Code
+    </a>
+  {% endif %}
+
+  <a href="{{ publication.bibtex }}"
+     class="btn btn-sm z-depth-0"
+     role="button"
+     target="_blank"
+     style="font-size:12px;">
+     BibTeX
+  </a>
+
+</div>
   </div>
 </div>
 </li>

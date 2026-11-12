@@ -6,7 +6,7 @@
   venue: International Journal of Remote Sensing
   year: 2026
   code: 'https://github.com/qaixerabbas/resisc-benchmark'
-  bibtex: https://bib.yliu.me/MICCAI23.txt
+  bibtex: abbas2026beyond
 - badge: JIIM
   image: ./assets/img/teaser_example_2.png
   title: "Rethinking Architectural Complexity in Deep Vision Models for Histopathological Image Classification"
@@ -15,7 +15,7 @@
   venue: Journal of Imaging Informatics in Medicine
   year: 2026
   code: 'https://github.com/qaixerabbas/rethinking_cpath_complexity'
-  bibtex: https://bib.yliu.me/MICCAI23.txt
+  bibtex: abbas2026rethinking
 - badge: Sci Rep
   image: ./assets/img/teaser_example_2.png
   title: "FaceAge+: training-free synthetic augmentation for deep learning-based biological age estimation from facial images"
@@ -24,7 +24,7 @@
   venue: Scientific Reports
   year: 2026
   code: 'https://github.com/qaixerabbas/faceage-plus'
-  bibtex: https://bib.yliu.me/MICCAI23.txt
+  bibtex: abbas2026faceage+
 - badge: Sci Rep
   image: ./assets/img/teaser_example_2.png
   title: "Cross-organ transfer learning for tumor microenvironment classification from colorectal to gastric cancer histopathology"
@@ -33,7 +33,7 @@
   venue: Scientific Reports
   year: 2026
   code: '#'
-  bibtex: https://bib.yliu.me/MICCAI23.txt
+  bibtex: alzoubi2026cross
 - badge: TechRxiv
   image: ./assets/img/teaser_example_2.png
   title: "Multimodal learning under imperfect data conditions: A survey"
@@ -42,7 +42,7 @@
   venue: TechRxiv
   year: 2025
   code: 'https://github.com/qaixerabbas/awesome-multimodal-learning-with-imperfect-data'
-  bibtex: https://bib.yliu.me/MICCAI23.txt
+  bibtex: liaqat2025multimodal
 - badge: IoT
   image: ./assets/img/teaser_example_2.png
   title: "Adversarial attacks on artificial Intelligence of Things-based operational technologies in theme parks"
@@ -51,7 +51,7 @@
   venue: Internet of Things
   year: 2025
   code: 'https://github.com/qaixerabbas/adv_attacks_vad'
-  bibtex: https://bib.yliu.me/MICCAI23.txt
+  bibtex: hina2025adversarial
 - badge: PeerJ
   image: ./assets/img/teaser_example_2.png
   title: "Optimization of predictive performance of intrusion detection system using hybrid ensemble model for secure systems"
@@ -60,7 +60,7 @@
   venue: PeerJ Computer Science
   year: 2023
   code: 'https://github.com/qaixerabbas/network_intrusion_detection'
-  bibtex: https://bib.yliu.me/MICCAI23.txt
+  bibtex: abbas2023optimization
 - badge: ACM TALLIP
   image: ./assets/img/teaser_example_2.png
   title: "Using Data Augmentation and Bidirectional Encoder Representations from Transformers for Improving Punjabi Named Entity Recognition"
@@ -69,7 +69,7 @@
   venue: ACM Transactions on Asian and Low-Resource Languages Information Processing
   year: 2023
   code: 'https://github.com/qaixerabbas/punjabiNER'
-  bibtex: https://bib.yliu.me/MICCAI23.txt
+  bibtex: khalid2023using
 - badge: SNCS
   image: ./assets/img/teaser_example_2.png
   title: "Detection and Classification of Malignant Melanoma Using Deep Features of NASNet"
@@ -78,7 +78,7 @@
   venue: SN Computer Science
   year: 2022
   code: '#'
-  bibtex: https://bib.yliu.me/MICCAI23.txt
+  bibtex: abbas2022detection
 - badge: VCIBA
   image: ./assets/img/teaser_example_2.png
   title: "Acral melanoma detection using dermoscopic images and convolutional neural networks"
@@ -87,4 +87,4 @@
   venue: Visual Computing for Industry, Biomedicine and Arts
   year: 2021
   code: '#'
-  bibtex: https://bib.yliu.me/MICCAI23.txt
+  bibtex: abbas2021acral
