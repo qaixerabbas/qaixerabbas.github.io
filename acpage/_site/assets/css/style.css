@@ -13,6 +13,15 @@
   --small-font-size: 11px;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
 body { background-color: #fff; padding: 0px; font: var(--body-font-size)/var(--body-line-height) Crimson Pro, serif; color: #595959; font-weight: 400; margin: 0; }
 
 .pub-row { display: flex; align-items: center; }
