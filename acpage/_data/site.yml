@@ -19,6 +19,8 @@ navigation:
     href: '#teaching'
   - label: Services
     href: '#services'
+  - label: Awards
+    href: '#awards'
 social_links:
   - href: https://scholar.google.com/citations?user=oAWfLsoAAAAJ&hl=en&oi=ao
     icon: ai ai-google-scholar

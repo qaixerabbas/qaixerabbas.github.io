@@ -54,7 +54,6 @@ layout: null
         </button>
         <div class="nav-links" id="primary-navigation">
           {% for item in site.data.site.navigation %}<a href="{{ item.href }}">{{ item.label }}</a>{% endfor %}
-          <!-- <a href="#awards">Awards</a> -->
           <!-- <a href="#education">Education</a> -->
           <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme">
             <i class="fas fa-adjust theme-toggle-icon" aria-hidden="true"></i>
@@ -85,6 +84,11 @@ layout: null
         {% include section-heading.html id="services" title="Services" %}
         {% include reviewer-list.html title="Conference Reviewer" items=site.data.services.conference_reviewers %}
         {% include reviewer-list.html title="Journal Reviewer" items=site.data.services.journal_reviewers %}
+
+        {% include section-heading.html id="awards" title="Awards" %}
+        <ul>
+        {% for award in site.data.awards %}<li>{{ award }}</li>{% endfor %}
+        </ul>
       </section>
       <footer></footer>
     </div>

@@ -10,6 +10,7 @@ This is the same portfolio content and visual design reorganized for Jekyll. The
 - `_data/publications.yml`: one publication per list entry. Add the title, link, authors, venue, year, and optional code/BibTex links.
 - `_data/teaching.yml`: one teaching position per list entry.
 - `_data/services.yml`: conference and journal reviewer lists.
+- `_data/awards.yml`: one award or scholarship per list entry.
 
 ## Where to edit structure
 
